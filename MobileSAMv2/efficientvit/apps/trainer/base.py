@@ -133,7 +133,7 @@ class Trainer:
 
     def reset_bn(
         self,
-        network: nn.Module or None = None,
+        network: nn.Module | None = None,
         subset_size: int = 16000,
         subset_batch_size: int = 100,
         data_loader=None,
@@ -204,7 +204,7 @@ class Trainer:
 
     """ training """
 
-    def prep_for_training(self, run_config: RunConfig, ema_decay: float or None = None, fp16=False) -> None:
+    def prep_for_training(self, run_config: RunConfig, ema_decay: float | None = None, fp16=False) -> None:
         self.run_config = run_config
         self.model = nn.parallel.DistributedDataParallel(
             self.model.cuda(),

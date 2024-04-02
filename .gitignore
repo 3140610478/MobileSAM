@@ -2,4 +2,23 @@
 *.pyo
 *.pyd
 __py
-**/__pycache__/
+mobile_sam.egg-info
+# documents
+*.txt
+*.docx
+*.pdf
+# logs
+*.log
+# images
+# *.html
+*.png
+# compressed files for datasets
+*.zip
+/Data/**/
+# __pycache__
+/**/__pycache__/
+# .ipynb_checkpoints/
+/**/.ipynb_checkpoints/
+# checkpoints & saved models
+*.model
+*.pt

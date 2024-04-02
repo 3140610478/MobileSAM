@@ -10,6 +10,7 @@ from mobilesamv2 import sam_model_registry, SamPredictor
 from typing import Any, Dict, Generator,List
 import matplotlib.pyplot as plt
 import numpy as np
+os.chdir(os.path.dirname(__file__))
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--ObjectAwareModel_path", type=str, default='./PromptGuidedDecoder/ObjectAwareModel.pt', help="ObjectAwareModel path")
